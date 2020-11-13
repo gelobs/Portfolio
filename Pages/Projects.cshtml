@@ -1,0 +1,36 @@
+﻿@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "My projects";
+}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="~/pictures/webdev.jpg" class="card-img">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="text-center display-4">Web Development and Deep Learning</h1>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action">Audio Source Separation</a>
+                    <a href="https://elaioladon-react.netlify.app/" class="list-group-item list-group-item-action">Elaioladon(Olive oil e-commerce web application)</a>
+                    <a href="https://tictactoe-angelo-b.netlify.app/" class="list-group-item list-group-item-action">Tic-Tac-Toe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 text-center order-last order-md-first">
+                <h1 class="display-4">University Project Samples</h1>
+                <div class="list-group">
+                    <a asp-action="GetPdf" asp-route-filePath="~/file/bousis_57149_patternrecognition3.pdf" asp-controller="PdfFile" class="list-group-item list-group-item-action">Pattern Recognition</a>
+                    <a asp-action="GetPdf" asp-route-filePath="~/file/Project_2_Filters_57149.pdf" asp-controller="PdfFile" class="list-group-item list-group-item-action">Microwave Circuit Design</a>
+                    <a asp-action="GetPdf" asp-route-filePath="~/file/Project-Numerical Analysis.pdf" asp-controller="PdfFile" class="list-group-item list-group-item-action">Numerical Analysis</a>
+                    <a asp-action="GetPdf" asp-route-filePath="~/file/computer_vision.pdf" asp-controller="PdfFile" class="list-group-item list-group-item-action">Computer Vision</a>
+                    <a asp-action="GetPdf" asp-route-filePath="~/file/Scientific2017.pdf" asp-controller="PdfFile" class="list-group-item list-group-item-action">Scientific Computing</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <img src="~/pictures/uni_fourier.jpg" class="card-img">
+            </div>
+        </div>
+    </div>

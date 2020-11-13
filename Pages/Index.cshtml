@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container-fluid">
+    <div class="text-center">
+        <h1 class="display-4">Hello friend</h1>
+        <p>This is my personal portfolio.</p>
+    </div>
+    <div class="text-center">
+        <img src="~/pictures/angelos.jpg" width="20%" height="20%" class="rounded img-responsive" alt="me" />
+    </div>
+
+    <div class="mt-5 text-center">
+        <p>I studied Electrical and Computer Engineering at the Democritus University of Thrace. I am passionate about software engineering and audio signal processing.</p>
+        <p><h6>Check out my diploma thesis with title: <a asp-action="GetPdf" asp-route-filePath="~/file/thesis_angelos_bousis.pdf" asp-controller="PdfFile">Automated Audio Source Extraction From Recordings Using Deep Neural Networks</a></h6></p>
+    </div>
+    
+    <div class="mt-5 text-center">
+        <div class="btn btn-dark"><a class="text-light text-decoration-none" asp-area="" asp-page="/Projects">See My Projects</a></div>
+    </div>
+</div>
