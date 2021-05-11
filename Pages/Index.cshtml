@@ -6,19 +6,20 @@
 
 <div class="container-fluid">
     <div class="text-center">
-        <h1 class="display-4">Hello friend</h1>
+        <h1 class="display-4">Welcome friend</h1>
         <p>This is my personal portfolio.</p>
     </div>
     <div class="text-center">
         <img src="~/pictures/angelos.jpg" class="rounded img-responsive img-me" alt="me" />
     </div>
 
-    <div class="mt-5 text-center">
-        <p>I studied Electrical and Computer Engineering at the Democritus University of Thrace. I am passionate about software engineering and audio signal processing.</p>
+    <div class="mt-5 text-center" align="center">
+        <p><h6>I studied Electrical and Computer Engineering and obtained my <a asp-action="GetPdf" asp-route-filePath="~/file/Integrated Master - Bousis A.pdf" asp-controller="PdfFile">Integrated Master</a> degree from the Democritus University of Thrace.<br />
+           I am passionate about software engineering and audio signal processing.</h6></p>
         <p><h6>Check out my diploma thesis with title: <a asp-action="GetPdf" asp-route-filePath="~/file/thesis_angelos_bousis.pdf" asp-controller="PdfFile">Automated Audio Source Extraction From Recordings Using Deep Neural Networks</a></h6></p>
     </div>
     
     <div class="mt-5 text-center">
-        <div class="btn btn-dark"><a class="text-light text-decoration-none" asp-area="" asp-page="/Projects">See My Projects</a></div>
+        <div class="btn btn-dark"><a class="text-light text-decoration-none" asp-area="" asp-page="/Projects">Check My Projects</a></div>
     </div>
 </div>
